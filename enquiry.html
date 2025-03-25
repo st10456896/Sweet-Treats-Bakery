@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry - Sweet Treats Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/Cupcake Bakery Logo.png" alt="Bakery Logo" width="200" height="200">
+
+        <nav class="nav-bar">
+            <a href="index.html">Home</a>                    
+            <a href="products.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+    </header>
+
+    <h1>Product & Service Enquiries</h1>
+
+    <section class="enquiry-form">
+        <h2>Have a Question? Get in Touch!</h2>
+        <p>Looking for a custom cake, bulk orders, or looking to volunteer? Fill out the form below, and we'll get back to you as soon as possible.</p>
+
+        <form action="submit_enquiry.php" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="custom-order">Custom Order</option>
+                <option value="bulk-order">Bulk Order</option>
+                <option value="allergy-info">Allergy Information</option>
+                <option value="general-inquiry">General Inquiry</option>
+            </select>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit Enquiry</button>
+
+    <footer>
+        <p>&copy; 2025 Sweet Treats Bakery. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
